@@ -1,0 +1,26 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "webpack0demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzAutumn/webpack-demo.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "yezi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zzAutumn/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/zzAutumn/webpack-demo#readme",
+  "dependencies": {
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8"
+  }
+}
