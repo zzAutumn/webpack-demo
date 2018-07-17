@@ -31,12 +31,40 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/,
-        loader: 'file-loader',
-        include: path.join(__dirname, 'src'),
-        options: {
-         name: '/images/[name]-[hash:5].[ext]',
-        }
-      }
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '/images/[name]-[hash:5].[ext]',
+             }
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              // optipng.enabled: false will disable optipng
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: '65-90',
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              // the webp option will enable WEBP
+              webp: {
+                quality: 75
+              }
+            }
+          }
+        ]
+        //include: path.join(__dirname, 'src'),
+      },
     ]
   },
 
