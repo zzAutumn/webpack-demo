@@ -5,7 +5,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: __dirname + '/dist'
+    path: __dirname + '/dist',
+    publicPath: 'dist'
   },
   module: {
     rules: [
@@ -33,7 +34,7 @@ module.exports = {
         loader: 'file-loader',
         include: path.join(__dirname, 'src'),
         options: {
-         name: '/assets/images/[name]-[hash:5].[ext]'
+         name: '/images/[name]-[hash:5].[ext]',
         }
       }
     ]
