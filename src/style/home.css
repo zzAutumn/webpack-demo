@@ -4,3 +4,10 @@
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
+.img{
+  background: url('../assets/images/google2.jpg') no-repeat;
+  background-size: cover;
+  margin: 10px auto;
+  width: 760px;
+  height: 500px;
+}

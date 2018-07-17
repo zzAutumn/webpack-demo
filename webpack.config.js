@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
@@ -25,6 +27,14 @@ module.exports = {
             loader: 'css-loader'
           }
         ],
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/,
+        loader: 'file-loader',
+        include: path.join(__dirname, 'src'),
+        options: {
+         name: '/assets/images/[name]-[hash:5].[ext]'
+        }
       }
     ]
   },
