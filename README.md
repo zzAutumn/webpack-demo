@@ -27,3 +27,15 @@ webpack demo tutorial
   },
   ```
   重点是publicPath指向'dist'，这样就能正确找到图片了。
+
+  ## Boom~~~ image-webpack-loader！！
+What it does is so awesome, It can compress your iamges.
+look at this picture:
+<img src="./WX@2x.png">  
+
+this is a picture before compressed, it is 2.19M, after using iamge-webpack-loader, it is only 273kb, funny~~~
+
+### 配置也很简单，按照它github上的官方配置就可以了。
+Url: https://github.com/tcoopman/image-webpack-loader
+
+
